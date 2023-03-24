@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(229, 197, 159, 0.703);
+}
+
+.container{
+    
+    color: black;
+    margin: 2rem auto;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+
+
+}
+
+#name {
+    
+    background-color: rgba(229, 197, 159, 0.703);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    animation: black 3s ease-in-out forwards;
+    font-family: 'Babylonica', cursive;
+
+}
+
+@keyframes black {
+    100% {top: 0;}
+}
+
+#main {
+    animation: yellow 3s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes yellow {
+    100% {opacity: 1;}
+}
+
+#directions {
+    animation: green 3s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes green {
+    100% {opacity: 1;}
+}
+
+#image {
+    animation: red 3s ease-in-out forwards;
+    transform: rotate(180deg);
+}
+
+@keyframes red {
+    100% {transform: rotate(360deg);}
+}
+
+.footer {
+    text-align: right;
+}
